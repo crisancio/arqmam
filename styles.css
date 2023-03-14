@@ -1,0 +1,187 @@
+/*estilo global*/
+*{
+box-sizing: border-box;    
+border: 0;
+padding: 0;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+  flex-direction: column;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(imagenes/inicio.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+h2 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 30px;
+    
+
+}
+h3{
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 10px;
+    /*text-align: center;*/
+    
+}
+p{
+    font-size: 1.2em;
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+/* Estilos para las secciones de la página */
+
+/*Inicio*/
+.inicio{
+    flex-direction: column;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(imagenes/inicio.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+/*Portfolio*/
+.portfolio{
+  flex-direction: column;
+  background-color: rgb(159, 193, 230);
+  color: rgb(24, 182, 74);
+  text-align:boton;
+}
+/*Clientes*/
+.clientes{
+    background-color:white;
+}
+/*Formacion*/
+.formacion{
+    background-color: rgb(96, 196, 218);
+}
+/*Contacto*/
+.contacto{
+    background-color: black;
+    flex-direction: column;
+}
+.col-md-4{
+  padding-bottom: 25px;
+}
+
+/*navbar*/
+
+/*.navbar{
+  background-color: transparent !important;
+  flex-direction: column;
+  background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(imagenes/inicio.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+
+}*/
+
+button{
+  color:red;
+}
+button:hover{
+  background-color:red;
+} 
+
+/* Estilos hover navbar */
+.navbar .navbar-nav .nav-link:hover {
+    color:red;
+}
+
+/*Offcanvas*/
+
+/* Estilos offcanvas */
+.offcanvas{
+  color: white;
+  background-color: black;
+}
+.offcanvas .navbar-nav .nav-link{
+  color: #fff;
+}
+/* Estilos hover offcanvas */
+.offcanvas .navbar-nav .nav-link:hover {
+  color:red;
+}
+/*Estilo boton offcanvas*/
+.offcanvas .offcanvas-header .btn-close{
+  background-color: red;
+}
+/*carrusel*/
+/*.carousel-item{
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  background-size: cover;
+  width: 100vh;
+}*/
+.carousel-control-prev:hover{
+  background-color: transparent !important;
+}
+.carousel-control-next:hover{
+  background-color: transparent !important;
+}
+.slide {
+  margin-top: 10px;
+}
+.slide img{
+height: 70vh;
+}
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+    section {
+      padding: 50px;
+      flex-direction: column;
+      }
+    
+    h2 {
+      font-size: 2.5em;
+      }
+    p {
+      font-size: 1em;
+    }
+    /*.carousel-item{
+      width: 45vh; 
+    }*/
+  }
+@media only screen and (max-width: 480px) {
+    .menu li a {
+      font-size: 0.8em;
+    }
+    .btn-top {
+      font-size: 1.5em;
+      width: 40px;
+      height: 40px;
+    }
+ 
+}
+
+  
