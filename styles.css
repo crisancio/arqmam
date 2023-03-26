@@ -25,6 +25,7 @@ section{
     align-items: center;
     text-align: center;
     background-color: rgb(0, 0, 0);
+    scroll-margin-top: 55px;
 }
 h1 {
   font-size: 1.2em;
@@ -73,9 +74,9 @@ p{
   /*background-color: rgb(159, 193, 230);*/
   color: rgb(24, 182, 74);
 } 
-/*Clientes*/
+/*Sobre Mi*/
 .sobremi{
-    flex-direction: column;  
+    flex-direction: column;
     background-image: linear-gradient(
       0deg,
       rgba(0,0,0,0.5),
@@ -202,13 +203,6 @@ button:hover{
   background-color: red;
 }
 /*carrusel*/
-/*.carousel-item{
-  height: 65vh;
-  min-height: 300px;
-  background: no-repeat center center scroll;
-  background-size: cover;
-  width: 100vh;
-}*/
 .carousel-control-prev:hover{
   background-color: transparent !important;
 }
@@ -231,7 +225,8 @@ height: 70vh;
       h1 {
         font-size: 1.2em;
       }
-      h2 {
+      
+    h2 {
       font-size: 2.5em;
       }
     p {
@@ -242,11 +237,15 @@ height: 70vh;
       height: 70px;
     }
   }
-@media only screen and (max-width: 480px) {
-    .menu li a {
-      font-size: 0.8em;
+/*@media only screen and (max-width: 480px) {
+    section {
+    max-height: 100%;
+    display: flex;
+    scroll-margin-top: 55px; 
+   } 
+    h1 {
+      font-size: 1em;
     }
-    
-}
+  }*/
 
   

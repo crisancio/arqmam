@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    
     <script src="https://kit.fontawesome.com/1719ea4d2e.js" crossorigin="anonymous"></script>
-  
+    <link rel="stylesheet" href="styles.css">
     <title>ARQMAM</title>
 </head>
 <body>
   <!--NavBar  -->
+
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color:#66000000 " id="menu">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><h1>Arquitecto Ariel Mamani</h1> </a>
@@ -39,7 +40,7 @@
       </div>
     </div>
   </nav>
-
+  
   <!--Offcanvas-->
   <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas" aria-labelledby="offcanvasLabel" >
     <div class="offcanvas-header">
@@ -195,20 +196,53 @@
   <!-- Script jquery y bootstrap -->
   <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <!--esconder menú on click bootstrap-->
-<script>
+  
+  <!--esconder offcanvas-->
+<!--<script>
   $(".navbar-nav>li>a").click(function(){ 
-    $('.offcanvas').offcanvas('hide'); });
+    setTimeout(function() {
+    $('.offcanvas').offcanvas('hide');
+   },700);
+    });
+</script>-->
+<script>
+  $('.navbar-nav>li>a').on('click', function(){
+      // Ocultar el offcanvas con una animación de desvanecimiento y un retraso de 800ms
+      $('.offcanvas').animate({opacity: 0}, 800, function() {
+          $('.offcanvas').offcanvas('hide');
+          $('.offcanvas').css({
+            visibility: 'visible',opacity:0
+          });
+      });
+  });
 </script>
-<!--scroll menu cambia de color-->
+<!--mostrar offcanvas despues de esconder-->
+<script>
+  $('.navbar-toggler').on('click', function(){
+      
+          $('.offcanvas').offcanvas('show');
+          $('.offcanvas').css({
+            visibility: 'visible',opacity:1
+          })
+  });
+</script>
+
+<!--menu transparente al hacer scroll cambia de color-->
 <script>
   $(window).scroll(function(){
-    if($("#menu").offset().top >25){
+    if($("#menu").offset().top >150){
       $("#menu").addClass("bg-black");
     }else{
       $("#menu").removeClass("bg-black");
     }
   });
 </script>
+<!--Cambiar de color item navbar mientras se hace scroll-->
+<script>
+  var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+  target: '#navbar  '
+})
+</script>
+
 </body>
 </html>
