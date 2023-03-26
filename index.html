@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="styles.css">
     
+    <script src="https://kit.fontawesome.com/1719ea4d2e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
     <title>ARQMAM</title>
 </head>
 <body>
   <!--NavBar  -->
+
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color:#66000000 " id="menu">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Arquitecto Ariel Mamani</a>
+      <a class="navbar-brand" href="#"><h1>Arquitecto Ariel Mamani</h1> </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#canvas" aria-controls="canvas" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -27,19 +28,19 @@
             <a class="nav-link" href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#clientes">Clientes</a>
+            <a class="nav-link" href="#sobremi">Sobre Mi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#formacion">Formacion</a>
+            <a class="nav-link " href="#servicios">Servicios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contacto">Contactos</a>
+            <a class="nav-link" href="#contacto">Contacto</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-
+  
   <!--Offcanvas-->
   <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas" aria-labelledby="offcanvasLabel" >
     <div class="offcanvas-header">
@@ -50,8 +51,8 @@
       <ul class="navbar-nav">
 				<li class="nav-item"><a class="nav-link" href="#inicio">INICIO</a></li>
 				<li class="nav-item"><a class="nav-link" href="#portfolio">PORTFOLIO</a></li>
-				<li class="nav-item"><a class="nav-link" href="#clientes">CLIENTES</a></li>
-				<li class="nav-item"><a class="nav-link" href="#formacion">FORMACION</a></li>
+				<li class="nav-item"><a class="nav-link" href="#sobremi">SOBRE MI</a></li>	
+        <li class="nav-item"><a class="nav-link" href="#servicios">SERVICIOS</a></li>
 				<li class="nav-item"><a class="nav-link" href="#contacto">CONTACTO</a></li>
 			</ul> 
 
@@ -65,6 +66,7 @@
     <P>"La arquitectura es mi pasión, cada edificio es una obra de arte que cuenta una historia y me inspira a crear espacios funcionales y bellos."
 		</P>
   </section>
+
   <section id="portfolio"class="portfolio">
         <!--Carrusel-->
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -72,6 +74,7 @@
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="3000">
@@ -95,6 +98,13 @@
                 <p>Algún contenido placeholder representativo para la tercera diapositiva.</p>
               </div>
             </div>
+            <div class="carousel-item"data-bs-interval="3000" >
+              <img src="imagenes/casa4.jpg" class="img-fluid" alt="..." >
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Etiqueta de la tercera diapositiva</h5>
+                <p>Algún contenido placeholder representativo para la tercera diapositiva.</p>
+              </div>
+            </div> 
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -106,59 +116,133 @@
           </button>
         </div>
   </section>
-  <section id="clientes"class="clientes">
 
+  <section id="sobremi"class="sobremi" >
+        <img src="imagenes/chino.png" class="img-fluid"alt="foto arquitecto">
+        <p>Como arquitecto, siempre he sido apasionado por mi trabajo. He tenido el privilegio de trabajar con diversos clientes, cada uno con necesidades y deseos únicos. Me enorgullece decir que, gracias a mi compromiso con el cliente, he sido capaz de superar las expectativas y entregar proyectos que han dejado una marca positiva en sus vidas.
+                Mi enfoque siempre ha sido escuchar cuidadosamente las necesidades de mis clientes y trabajar en estrecha colaboración con ellos para encontrar la mejor solución arquitectónica para sus proyectos. Me esfuerzo por entender la visión del cliente y asegurarme de que su proyecto sea una representación fiel de sus deseos y necesidades.
+                Creo que mi pasión y compromiso con el cliente son las claves para mi éxito en esta industria. Espero tener la oportunidad de trabajar con ustedes y ayudarlos a llevar a cabo su próximo proyecto.</p>
   </section>
-  <section id="formacion"class="formacion">
 
+  <section id="servicios"class="servicios">
+    <div class="container marketing">
+      <div class="row">
+      <div class="col-lg-4">
+      <svg class="bd-placeholder-img " width="100" height="100"svg xmlns="http://www.w3.org/2000/svg"  fill="#fff" class="bi bi-pencil" viewBox="0 0 16 16">
+        <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+      </svg>
+      <h2>Diseño</h2>
+      <p>Diseño de Iluminacion</p>
+      <p>Diseño Arquitectonico</p>
+      <p>Diseño de Interiores</p>
+      <p>Diseño Paisajistico</p>
+      </div>
+      <div class="col-lg-4">
+      <svg class="bd-placeholder-img " width="100" height="100" xmlns="http://www.w3.org/2000/svg"  fill="#fff" class="bi bi-signpost-2" viewBox="0 0 16 16">
+        <path d="M7 1.414V2H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h5v1H2.5a1 1 0 0 0-.8.4L.725 8.7a.5.5 0 0 0 0 .6l.975 1.3a1 1 0 0 0 .8.4H7v5h2v-5h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H9V6h4.5a1 1 0 0 0 .8-.4l.975-1.3a.5.5 0 0 0 0-.6L14.3 2.4a1 1 0 0 0-.8-.4H9v-.586a1 1 0 0 0-2 0zM13.5 3l.75 1-.75 1H2V3h11.5zm.5 5v2H2.5l-.75-1 .75-1H14z"/>
+      </svg>>
+      <h2>Planificacion Urbana</h2>
+      <p>Planes maestros para barrios</p>
+      <p>Diseños de Espacios Verdes</p>
+      <p>Conservacion de Edificios</p>
+      <p>Restauracion de Edificios</p>
+      </div>
+      <div class="col-lg-4">
+      <svg class="bd-placeholder-img " width="100" height="100" xmlns="http://www.w3.org/2000/svg"  fill="#fff"  class="bi bi-book-half" viewBox="0 0 16 16">
+        <path d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+      </svg>
+      <h2>Consultoria</h2>
+      <p>Asesoramiento en Sostenibilidad</p>
+      <p>Administracion de Proyectos</p>
+      <p>Asesoramiento Tecnico</p>
+      <p>Inspeccion de Edificios</p>
+      </div>
+      </div>
   </section>
+
   <section id="contacto"class="contacto">
-    <h2>Contactos</h2>
+    <h2>Contacto</h2>
     <div class="row">
-      <div class="col-md-4">
-        <h3>Contacto</h3>
+      <div class="col-md-12">
+        <!--<h3>Contacto</h3>-->
         <p>mail:chino@example.com</p>
         <p>Celular: +54387-4845050</p>
         <p>Direccion: Cualquier Joda</p>
       </div>
-      <div class="col-md-4">
+      <!--<div class="col-md-12">
         <h3>Redes Sociales</h3>
         <p>Facebook : (dirección de Facebook)</p>
 			  <p>Twitter: (dirección de Twitter)</p>
 			  <p>Instagram: (dirección de Instagram)</p>
-        
       </div>
       <div class="col-md-4">
         <h3>Sobre este sitio</h3>
         <p>Propiedad de: Poliarqui</p>
-        <p>Webmaster: Yo</p>
+        <p>Webmaster: Yo</p>-->
       </div>
     </div>
+  
+  <footer >
+    <h3>Redes Sociales</h3>
+    <div class="social">
+      <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"><alt="Facebook"></a>
+      <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"><alt="Instagram"></a>
+      <a href="https://www.twitter.com" target="_blank" class="fa fa-twitter"><alt="Twitter"></a>
+    </div>
+    <p>Derechos de autor © 2023, ARQMAM. Todos los derechos reservados.</p>
+  </footer>
+  </section>  
 
-  </section>
   <!-- Script jquery y bootstrap -->
-	<!--<script src="js/jquery-3.6.3.min.js"></script>-->   
-	<!--<script src="js/bootstrap.bundle.min.js"></script>-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-
-  <!-- Script para el botón flotante -->
-	<script src="js/script.js"></script>
-
-  <!--esconder menú on click bootstrap-->
-<script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+  <!--esconder offcanvas-->
+<!--<script>
   $(".navbar-nav>li>a").click(function(){ 
-    $('.offcanvas').offcanvas('hide'); })
+    setTimeout(function() {
+    $('.offcanvas').offcanvas('hide');
+   },700);
+    });
+</script>-->
+<script>
+  $('.navbar-nav>li>a').on('click', function(){
+      // Ocultar el offcanvas con una animación de desvanecimiento y un retraso de 800ms
+      $('.offcanvas').animate({opacity: 0}, 800, function() {
+          $('.offcanvas').offcanvas('hide');
+          $('.offcanvas').css({
+            visibility: 'visible',opacity:0
+          });
+      });
+  });
 </script>
-<!--scroll menu cambia de color-->
+<!--mostrar offcanvas despues de esconder-->
+<script>
+  $('.navbar-toggler').on('click', function(){
+      
+          $('.offcanvas').offcanvas('show');
+          $('.offcanvas').css({
+            visibility: 'visible',opacity:1
+          })
+  });
+</script>
+
+<!--menu transparente al hacer scroll cambia de color-->
 <script>
   $(window).scroll(function(){
-    if($("#menu").offset().top >50){
-       $("#menu").addClass("bg-black");
+    if($("#menu").offset().top >150){
+      $("#menu").addClass("bg-black");
     }else{
       $("#menu").removeClass("bg-black");
     }
   });
 </script>
+<!--Cambiar de color item navbar mientras se hace scroll-->
+<script>
+  var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+  target: '#navbar  '
+})
+</script>
+
 </body>
 </html>

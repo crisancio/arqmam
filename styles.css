@@ -24,20 +24,26 @@ section{
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: rgb(0, 0, 0);
+    scroll-margin-top: 55px;
+}
+h1 {
+  font-size: 1.2em;
+  color: #fff;
+  margin-bottom: 0;
+  margin-left: 15px;
+  
 }
 h2 {
     font-size: 3em;
     color: #fff;
     margin-bottom: 30px;
-    
-
 }
 h3{
     font-size: 2em;
     color: #fff;
     margin-bottom: 10px;
     /*text-align: center;*/
-    
 }
 p{
     font-size: 1.2em;
@@ -61,30 +67,92 @@ p{
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-
 }
 /*Portfolio*/
 .portfolio{
   flex-direction: column;
-  background-color: rgb(159, 193, 230);
+  /*background-color: rgb(159, 193, 230);*/
   color: rgb(24, 182, 74);
-  text-align:boton;
+} 
+/*Sobre Mi*/
+.sobremi{
+    flex-direction: column;
+    background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  ) 
+  ,url(imagenes/contacto2.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  }
+.sobremi img{
+  width:50vh;
+  }
+
+/*Servicios*/
+.servicios h2{
+  margin: 2px;
 }
-/*Clientes*/
-.clientes{
-    background-color:white;
+/*.servicios img{
+  width:10vh;
+  }*/
+.col-lg-4{
+  padding-bottom: 25px;
 }
-/*Formacion*/
-.formacion{
-    background-color: rgb(96, 196, 218);
+.bd-placeholder-img{
+  background-color:rgb(14, 14, 14); 
+  fill: rgb(251, 248, 248);
 }
+
+
 /*Contacto*/
 .contacto{
+    background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  ) 
+  ,url(imagenes/contacto.jpg);
+    background-size: cover;
     background-color: black;
     flex-direction: column;
 }
-.col-md-4{
-  padding-bottom: 25px;
+.col-md-12{
+  padding-bottom: 55px;
+}
+
+/*Pie de pagina*/
+footer {
+  /*background-color: transparent !important;*/
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+      );
+  padding: 10px;
+  width: 100%;
+  /*display: flex;*/
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social a{
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  background-color: rgb(128, 128, 142);
+  margin: 20px;
+
+}
+.social a:hover{
+  color: red;
 }
 
 /*navbar*/
@@ -135,13 +203,6 @@ button:hover{
   background-color: red;
 }
 /*carrusel*/
-/*.carousel-item{
-  height: 65vh;
-  min-height: 300px;
-  background: no-repeat center center scroll;
-  background-size: cover;
-  width: 100vh;
-}*/
 .carousel-control-prev:hover{
   background-color: transparent !important;
 }
@@ -161,27 +222,30 @@ height: 70vh;
       padding: 50px;
       flex-direction: column;
       }
-    
+      h1 {
+        font-size: 1.2em;
+      }
+      
     h2 {
       font-size: 2.5em;
       }
     p {
       font-size: 1em;
     }
-    /*.carousel-item{
-      width: 45vh; 
-    }*/
+    .bd-placeholder-img {
+      width: 70px;
+      height: 70px;
+    }
   }
-@media only screen and (max-width: 480px) {
-    .menu li a {
-      font-size: 0.8em;
+/*@media only screen and (max-width: 480px) {
+    section {
+    max-height: 100%;
+    display: flex;
+    scroll-margin-top: 55px; 
+   } 
+    h1 {
+      font-size: 1em;
     }
-    .btn-top {
-      font-size: 1.5em;
-      width: 40px;
-      height: 40px;
-    }
- 
-}
+  }*/
 
   
